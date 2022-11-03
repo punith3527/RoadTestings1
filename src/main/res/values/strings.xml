@@ -29,10 +29,13 @@
   <string name="_75_00">75.00</string>
   <string name="download">Download</string>
   <string name="add">ADD</string>
-  <string name="gradation_1">Gradation-1</string>
-  <string name="gradation_3">Gradation-3</string>
-  <string name="gradation_5">Gradation-5</string>
+  <string name="gradation_1">Grade-1</string>
+  <string name="gradation_3">Grade-3</string>
+  <string name="gradation_5">Grade-5</string>
   <string name="chainge_at_km">Chiange at Km</string>
   <string name="grb">GRB</string>
   <string name="pan">Pan</string>
+    <string name="density">Density</string>
+  <string name="gsb">GSB</string>
+  <string name="wmm">WMM</string>
 </resources>

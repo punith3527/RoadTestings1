@@ -1,4 +1,4 @@
-package com.example.roadtestings1.Gradation.Gradation_1;
+package com.example.roadtestings1.Gradation.GSB.Gradation_1;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.roadtestings1.Gradation.GradationTypesActivity;
+import com.example.roadtestings1.Gradation.GSB.GradationTypesActivity;
 import com.example.roadtestings1.R;
 import com.google.android.material.textfield.TextInputLayout;
 

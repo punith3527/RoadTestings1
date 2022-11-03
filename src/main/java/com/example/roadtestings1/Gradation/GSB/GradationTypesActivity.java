@@ -1,12 +1,12 @@
-package com.example.roadtestings1.Gradation;
+package com.example.roadtestings1.Gradation.GSB;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.roadtestings1.Gradation.Gradation_1.Gradation1InputActivity;
-import com.example.roadtestings1.Gradation.Gradation_3.Gradation3InputActivity;
-import com.example.roadtestings1.Gradation.Gradation_5.Gradation5InputActivity;
+import com.example.roadtestings1.Gradation.GSB.Gradation_1.Gradation1InputActivity;
+import com.example.roadtestings1.Gradation.GSB.Gradation_3.Gradation3InputActivity;
+import com.example.roadtestings1.Gradation.GSB.Gradation_5.Gradation5InputActivity;
 import com.example.roadtestings1.MainActivity;
 import com.example.roadtestings1.R;
 
@@ -24,7 +24,7 @@ public class GradationTypesActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.gsb_types);
 
-    Objects.requireNonNull(getSupportActionBar()).setTitle("Gradation");
+    Objects.requireNonNull(getSupportActionBar()).setTitle("GSB");
 
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

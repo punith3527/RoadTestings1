@@ -1,4 +1,4 @@
-package com.example.roadtestings1.Gradation.Gradation_1;
+package com.example.roadtestings1.Gradation.GSB.Gradation_5;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -6,10 +6,8 @@ import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
-import android.view.View;
 import android.view.WindowManager;
 import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,16 +22,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import static android.content.ContentValues.TAG;
 
-public class Gradation1OutputActivity extends AppCompatActivity {
+public class Gradation5OutputActivity extends AppCompatActivity {
+
   private static final DecimalFormat df = new DecimalFormat("0.00");
 
-  String a1, b1, c1, d1, e1, f1, g1, h1;
-  String a6, b6, c6, d6, e6, f6, g6, h6;
-  double a7, b7, c7, d7, e7, f7, g7, h7;
-  String a8, b8, c8, d8, e8, f8, g8, h8;
+  String a1, b1, c1, d1, e1, f1, g1, h1, i1;
+  String a6, b6, c6, d6, e6, f6, g6, h6, i6;
+  double a7, b7, c7, d7, e7, f7, g7, h7, i7;
+  String a8, b8, c8, d8, e8, f8, g8, h8, i8;
 
-  int a2, b2, c2, d2, e2, f2, g2, h2;
-  int a3, b3, c3, d3, e3, f3, g3, h3;
+  int a2, b2, c2, d2, e2, f2, g2, h2, i2;
+  int a3, b3, c3, d3, e3, f3, g3, h3, i3;
 
   double a4, a5,
     b4, b5,
@@ -42,18 +41,13 @@ public class Gradation1OutputActivity extends AppCompatActivity {
     e4, e5,
     f4, f5,
     g4, g5,
-    h4, h5;
+    h4, h5,
+    i4, i5;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.table_output);
-
-    TableRow row9 = findViewById(R.id.row9);
-    row9.setVisibility(View.GONE);
-
-    View view10 = findViewById(R.id.view10);
-    view10.setVisibility(View.GONE);
 
     getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
       WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -68,8 +62,9 @@ public class Gradation1OutputActivity extends AppCompatActivity {
     d1 = "9.5";
     e1 = "4.75";
     f1 = "2.36";
-    g1 = "0.425";
-    h1 = "75μ";
+    g1 = "0.85";
+    h1 = "0.425";
+    i1 = "75μ";
 
     Intent intent = getIntent();
     a2 = Integer.parseInt(intent.getStringExtra("a2"));
@@ -80,6 +75,7 @@ public class Gradation1OutputActivity extends AppCompatActivity {
     f2 = Integer.parseInt(intent.getStringExtra("f2"));
     g2 = Integer.parseInt(intent.getStringExtra("g2"));
     h2 = Integer.parseInt(intent.getStringExtra("h2"));
+    i2 = Integer.parseInt(intent.getStringExtra("i2"));
 
     a3 = a2;
     b3 = a3 + b2;
@@ -89,15 +85,17 @@ public class Gradation1OutputActivity extends AppCompatActivity {
     f3 = e3 + f2;
     g3 = f3 + g2;
     h3 = g3 + h2;
+    i3 = h3 + i2;
 
-    a4 = a3 * 100.0 / h3;
-    b4 = b3 * 100.0 / h3;
-    c4 = c3 * 100.0 / h3;
-    d4 = d3 * 100.0 / h3;
-    e4 = e3 * 100.0 / h3;
-    f4 = f3 * 100.0 / h3;
-    g4 = g3 * 100.0 / h3;
-    h4 = h3 * 100.0 / h3;
+    a4 = a3 * 100.0 / i3;
+    b4 = b3 * 100.0 / i3;
+    c4 = c3 * 100.0 / i3;
+    d4 = d3 * 100.0 / i3;
+    e4 = e3 * 100.0 / i3;
+    f4 = f3 * 100.0 / i3;
+    g4 = g3 * 100.0 / i3;
+    h4 = h3 * 100.0 / i3;
+    i4 = i3 * 100.0 / i3;
 
     a5 = 100 - a4;
     b5 = 100 - b4;
@@ -107,18 +105,20 @@ public class Gradation1OutputActivity extends AppCompatActivity {
     f5 = 100 - f4;
     g5 = 100 - g4;
     h5 = 100 - h4;
+    i5 = 100 - i4;
 
     a6 = "100";
     b6 = "80-100";
     c6 = "55-90";
     d6 = "35-65";
-    e6 = "25-55";
-    f6 = "20-40";
-    g6 = "10-15";
+    e6 = "25-50";
+    f6 = "10-20";
+    g6 = "2-10";
     h6 = "0-5";
+    i6 = "0";
 
-    a7 = b7 = c7 = d7 = e7 = f7 = g7 = h7 = 0;
-    a8 = b8 = c8 = d8 = e8 = f8 = g8 = h8 = null;
+    a7 = b7 = c7 = d7 = e7 = f7 = g7 = h7 = i7 = 0;
+    a8 = b8 = c8 = d8 = e8 = f8 = g8 = h8 = i8 = null;
 
     if (a5 < 100) {
       a7 = 100 - a5;
@@ -152,30 +152,35 @@ public class Gradation1OutputActivity extends AppCompatActivity {
     if (e5 < 25) {
       e7 = 25 - e5;
       e8 = "O/s";
-    } else if (e5 > 55) {
-      e7 = e5 - 55;
+    } else if (e5 > 50) {
+      e7 = e5 - 50;
       e8 = "U/s";
     }
 
-    if (f5 < 20) {
-      f7 = 20 - f5;
+    if (f5 < 10) {
+      f7 = 10 - f5;
       f8 = "O/s";
-    } else if (f5 > 40) {
-      f7 = f5 - 40;
+    } else if (f5 > 20) {
+      f7 = f5 - 20;
       f8 = "U/s";
     }
 
-    if (g5 < 10) {
-      g7 = 10 - g5;
+    if (g5 < 2) {
+      g7 = 2 - g5;
       g8 = "O/s";
-    } else if (g5 > 15) {
-      g7 = g5 - 15;
+    } else if (g5 > 10) {
+      g7 = g5 - 10;
       g8 = "U/s";
     }
 
     if (h5 > 5) {
       h7 = h5 - 5;
       h8 = "U/s";
+    }
+
+    if (i5 > 0) {
+      i7 = i5 - 5;
+      i8 = "U/s";
     }
 
     TextView A1 = findViewById(R.id.a1);
@@ -403,12 +408,40 @@ public class Gradation1OutputActivity extends AppCompatActivity {
     TextView H8 = findViewById(R.id.h8);
     H8.setText(h8);
 
+    TextView I1 = findViewById(R.id.i1);
+    I1.setText(i1);
+
+    TextView I2 = findViewById(R.id.i2);
+    I2.setText(String.valueOf(i2));
+
+    TextView I3 = findViewById(R.id.i3);
+    I3.setText(String.valueOf(i3));
+
+    TextView I4 = findViewById(R.id.i4);
+    I4.setText(df.format(i4));
+
+    TextView I5 = findViewById(R.id.i5);
+    I5.setText(df.format(i5));
+
+    TextView I6 = findViewById(R.id.i6);
+    I6.setText(i6);
+
+    TextView I7 = findViewById(R.id.i7);
+    if (i7 == 0) {
+      I7.setText(null);
+    } else {
+      I7.setText(df.format(i7));
+    }
+
+    TextView I8 = findViewById(R.id.i8);
+    I8.setText(i8);
+
     TextView Z1 = findViewById(R.id.z1);
     String chiange = intent.getStringExtra("z1");
     Z1.setText(String.format("Chiange at Km %s", chiange));
 
     TextView Z2 = findViewById(R.id.z2);
-    Z2.setText(String.format("Weight :: %s gms", h3));
+    Z2.setText(String.format("Weight :: %s gms", i3));
 
     MovableFloatingActionButton movableFloatingActionButton = findViewById(R.id.fab);
     movableFloatingActionButton.setOnClickListener(v -> buttonScreenshot());

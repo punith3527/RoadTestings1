@@ -24,19 +24,22 @@
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
     </activity>
-    <activity android:name=".Gradation.Gradation_5.Gradation5InputActivity"/>
-    <activity android:name=".Gradation.Gradation_5.Gradation5OutputActivity"
+    <activity android:name=".Gradation.GSB.Gradation_5.Gradation5InputActivity"/>
+    <activity android:name=".Gradation.GSB.Gradation_5.Gradation5OutputActivity"
       android:screenOrientation="landscape" />
-    <activity android:name=".Gradation.GradationTypesActivity"/>
-    <activity android:name=".GRB.GRBInputActivity"/>
-    <activity android:name=".GRB.GRBOutputActivity"
+    <activity android:name=".Gradation.GSB.GradationTypesActivity"/>
+    <activity android:name=".Gradation.WMM.GRBInputActivity"/>
+    <activity android:name=".Gradation.WMM.GRBOutputActivity"
       android:screenOrientation="landscape"/>
-    <activity android:name=".Gradation.Gradation_1.Gradation1InputActivity"/>
-    <activity android:name=".Gradation.Gradation_1.Gradation1OutputActivity"
+    <activity android:name=".Gradation.GSB.Gradation_1.Gradation1InputActivity"/>
+    <activity android:name=".Gradation.GSB.Gradation_1.Gradation1OutputActivity"
       android:screenOrientation="landscape"/>
-    <activity android:name=".Gradation.Gradation_3.Gradation3InputActivity"/>
-    <activity android:name=".Gradation.Gradation_3.Gradation3OutputActivity"
+    <activity android:name=".Gradation.GSB.Gradation_3.Gradation3InputActivity"/>
+    <activity android:name=".Gradation.GSB.Gradation_3.Gradation3OutputActivity"
       android:screenOrientation="landscape"/>
+    <activity android:name=".Gradation.InsideGradationActivity"/>
+    <activity android:name=".Density.DensityInputActivity"/>
+    <activity android:name=".Density.DensityOutputActivity"/>
   </application>
 
 </manifest>

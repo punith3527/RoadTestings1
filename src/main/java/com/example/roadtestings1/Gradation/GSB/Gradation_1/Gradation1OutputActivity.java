@@ -1,4 +1,4 @@
-package com.example.roadtestings1.GRB;
+package com.example.roadtestings1.Gradation.GSB.Gradation_1;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -6,8 +6,10 @@ import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,16 +24,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import static android.content.ContentValues.TAG;
 
-public class GRBOutputActivity extends AppCompatActivity {
+public class Gradation1OutputActivity extends AppCompatActivity {
   private static final DecimalFormat df = new DecimalFormat("0.00");
 
-  String a1, b1, c1, d1, e1, f1, g1, h1, i1;
-  String a6, b6, c6, d6, e6, f6, g6, h6, i6;
-  double a7, b7, c7, d7, e7, f7, g7, h7, i7;
-  String a8, b8, c8, d8, e8, f8, g8, h8, i8;
+  String a1, b1, c1, d1, e1, f1, g1, h1;
+  String a6, b6, c6, d6, e6, f6, g6, h6;
+  double a7, b7, c7, d7, e7, f7, g7, h7;
+  String a8, b8, c8, d8, e8, f8, g8, h8;
 
-  int a2, b2, c2, d2, e2, f2, g2, h2, i2;
-  int a3, b3, c3, d3, e3, f3, g3, h3, i3;
+  int a2, b2, c2, d2, e2, f2, g2, h2;
+  int a3, b3, c3, d3, e3, f3, g3, h3;
 
   double a4, a5,
     b4, b5,
@@ -40,13 +42,18 @@ public class GRBOutputActivity extends AppCompatActivity {
     e4, e5,
     f4, f5,
     g4, g5,
-    h4, h5,
-    i4, i5;
+    h4, h5;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.table_output);
+
+    TableRow row9 = findViewById(R.id.row9);
+    row9.setVisibility(View.GONE);
+
+    View view10 = findViewById(R.id.view10);
+    view10.setVisibility(View.GONE);
 
     getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
       WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -55,15 +62,14 @@ public class GRBOutputActivity extends AppCompatActivity {
       getSupportActionBar().hide();
     }
 
-    a1 = "53.00";
-    b1 = "45.00";
-    c1 = "22.40";
-    d1 = "11.20";
+    a1 = "75.00";
+    b1 = "53.00";
+    c1 = "26.5";
+    d1 = "9.5";
     e1 = "4.75";
     f1 = "2.36";
-    g1 = "600μ";
+    g1 = "0.425";
     h1 = "75μ";
-    i1 = "Pan";
 
     Intent intent = getIntent();
     a2 = Integer.parseInt(intent.getStringExtra("a2"));
@@ -74,7 +80,6 @@ public class GRBOutputActivity extends AppCompatActivity {
     f2 = Integer.parseInt(intent.getStringExtra("f2"));
     g2 = Integer.parseInt(intent.getStringExtra("g2"));
     h2 = Integer.parseInt(intent.getStringExtra("h2"));
-    i2 = Integer.parseInt(intent.getStringExtra("i2"));
 
     a3 = a2;
     b3 = a3 + b2;
@@ -84,17 +89,15 @@ public class GRBOutputActivity extends AppCompatActivity {
     f3 = e3 + f2;
     g3 = f3 + g2;
     h3 = g3 + h2;
-    i3 = h3 + i2;
 
-    a4 = a3 * 100.0 / i3;
-    b4 = b3 * 100.0 / i3;
-    c4 = c3 * 100.0 / i3;
-    d4 = d3 * 100.0 / i3;
-    e4 = e3 * 100.0 / i3;
-    f4 = f3 * 100.0 / i3;
-    g4 = g3 * 100.0 / i3;
-    h4 = h3 * 100.0 / i3;
-    i4 = i3 * 100.0 / i3;
+    a4 = a3 * 100.0 / h3;
+    b4 = b3 * 100.0 / h3;
+    c4 = c3 * 100.0 / h3;
+    d4 = d3 * 100.0 / h3;
+    e4 = e3 * 100.0 / h3;
+    f4 = f3 * 100.0 / h3;
+    g4 = g3 * 100.0 / h3;
+    h4 = h3 * 100.0 / h3;
 
     a5 = 100 - a4;
     b5 = 100 - b4;
@@ -104,82 +107,75 @@ public class GRBOutputActivity extends AppCompatActivity {
     f5 = 100 - f4;
     g5 = 100 - g4;
     h5 = 100 - h4;
-    i5 = 100 - i4;
 
     a6 = "100";
-    b6 = "95-100";
-    c6 = "60-80";
-    d6 = "40-60";
-    e6 = "25-40";
-    f6 = "15-30";
-    g6 = "8-22";
-    h6 = "0-8";
-    i6 = "0";
+    b6 = "80-100";
+    c6 = "55-90";
+    d6 = "35-65";
+    e6 = "25-55";
+    f6 = "20-40";
+    g6 = "10-15";
+    h6 = "0-5";
 
-    a7 = b7 = c7 = d7 = e7 = f7 = g7 = h7 = i7 = 0;
-    a8 = b8 = c8 = d8 = e8 = f8 = g8 = h8 = i8 = null;
+    a7 = b7 = c7 = d7 = e7 = f7 = g7 = h7 = 0;
+    a8 = b8 = c8 = d8 = e8 = f8 = g8 = h8 = null;
 
     if (a5 < 100) {
       a7 = 100 - a5;
       a8 = "O/s";
     }
 
-    if (b5 < 95) {
-      b7 = 95 - b5;
+    if (b5 < 80) {
+      b7 = 80 - b5;
       b8 = "O/s";
     } else if (b5 > 100) {
       b7 = b5 - 100;
       b8 = "U/s";
     }
 
-    if (c5 < 60) {
-      c7 = 60 - c5;
+    if (c5 < 55) {
+      c7 = 55 - c5;
       c8 = "O/s";
-    } else if (c5 > 80) {
-      c7 = c5 - 80;
+    } else if (c5 > 90) {
+      c7 = c5 - 90;
       c8 = "U/s";
     }
 
-    if (d5 < 40) {
-      d7 = 40 - d5;
+    if (d5 < 35) {
+      d7 = 35 - d5;
       d8 = "O/s";
-    } else if (d5 > 60) {
-      d7 = d5 - 60;
+    } else if (d5 > 65) {
+      d7 = d5 - 65;
       d8 = "U/s";
     }
 
     if (e5 < 25) {
       e7 = 25 - e5;
       e8 = "O/s";
-    } else if (e5 > 40) {
-      e7 = e5 - 40;
+    } else if (e5 > 55) {
+      e7 = e5 - 55;
       e8 = "U/s";
     }
 
-    if (f5 < 15) {
-      f7 = 15 - f5;
+    if (f5 < 20) {
+      f7 = 20 - f5;
       f8 = "O/s";
-    } else if (f5 > 30) {
-      f7 = f5 - 30;
+    } else if (f5 > 40) {
+      f7 = f5 - 40;
       f8 = "U/s";
     }
 
-    if (g5 < 8) {
-      g7 = 8 - g5;
+    if (g5 < 10) {
+      g7 = 10 - g5;
       g8 = "O/s";
-    } else if (g5 > 22) {
-      g7 = g5 - 22;
+    } else if (g5 > 15) {
+      g7 = g5 - 15;
       g8 = "U/s";
     }
 
-    if (h5 > 8) {
-      h7 = h5 - 8;
+    if (h5 > 5) {
+      h7 = h5 - 5;
       h8 = "U/s";
-    }
-
-    if (i5 > 0) {
-      i7 = i5 - 0;
-      i8 = "U/s";
     }
 
     TextView A1 = findViewById(R.id.a1);
@@ -407,40 +403,12 @@ public class GRBOutputActivity extends AppCompatActivity {
     TextView H8 = findViewById(R.id.h8);
     H8.setText(h8);
 
-    TextView I1 = findViewById(R.id.i1);
-    I1.setText(i1);
-
-    TextView I2 = findViewById(R.id.i2);
-    I2.setText(String.valueOf(i2));
-
-    TextView I3 = findViewById(R.id.i3);
-    I3.setText(String.valueOf(i3));
-
-    TextView I4 = findViewById(R.id.i4);
-    I4.setText(df.format(i4));
-
-    TextView I5 = findViewById(R.id.i5);
-    I5.setText(df.format(i5));
-
-    TextView I6 = findViewById(R.id.i6);
-    I6.setText(i6);
-
-    TextView I7 = findViewById(R.id.i7);
-    if (i7 == 0) {
-      I7.setText(null);
-    } else {
-      I7.setText(df.format(i7));
-    }
-
-    TextView I8 = findViewById(R.id.i8);
-    I8.setText(i8);
-
     TextView Z1 = findViewById(R.id.z1);
     String chiange = intent.getStringExtra("z1");
     Z1.setText(String.format("Chiange at Km %s", chiange));
 
     TextView Z2 = findViewById(R.id.z2);
-    Z2.setText(String.format("Weight :: %s gms", i3));
+    Z2.setText(String.format("Weight :: %s gms", h3));
 
     MovableFloatingActionButton movableFloatingActionButton = findViewById(R.id.fab);
     movableFloatingActionButton.setOnClickListener(v -> buttonScreenshot());
