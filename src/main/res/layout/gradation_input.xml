@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:id="@+id/hello"
+  android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:id="@+id/sieve"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/sieve"
+      android:textSize="30sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+      android:id="@+id/gap"
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="20dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/calculate"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/calculate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:text="@string/calculate"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/input75Item" />
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/chaingeItem"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/chainge_at_km"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/sieve">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/chainge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input75.00Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_75_00_mm"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/chaingeItem">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input75.00"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input53Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_53_00_mm"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/input75.00Item">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input53"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input26.5Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_26_5_mm"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/input53Item">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input26.5"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input9.5Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_9_5_mm"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/input26.5Item">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input9.5"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input4.75Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_4_75"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/input9.5Item">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input4.75"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input2.36Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_2_36_mm"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/input4.75Item">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input2.36"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input0.85Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_0_85_mm"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/input2.36Item">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input0.85"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input75Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_75"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/input0.425Item">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input75"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/input0.425Item"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="20dp"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="10dp"
+      android:hint="@string/_0_425_mm"
+      android:inputType="text"
+      app:layout_constraintTop_toBottomOf="@id/input0.85Item">
+
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/input0.425"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
