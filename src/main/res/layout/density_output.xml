@@ -1,313 +1,566 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:id="@+id/hello"
     android:layout_height="match_parent">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
 
-        <TextView
-            android:id="@+id/density"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/density"
-            android:textSize="30sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <LinearLayout
-            android:id="@+id/gap"
-            android:orientation="horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/calculate"/>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/calculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="@string/to_table"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/relativeItem" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/locationItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/location"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/density">
+            android:layout_height="wrap_content">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/location"
+            <TableLayout
+                android:id="@+id/table"
+                app:layout_constraintTop_toTopOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:showDividers="middle"
+                android:background="@drawable/table_bg"
+                android:stretchColumns="*">
 
-        </com.google.android.material.textfield.TextInputLayout>
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/w1Item"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/w1_wt_before_pouring"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/locationItem">
+                    <TextView
+                        android:id="@+id/z1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:text="@string/sl_no"
+                        android:textColor="@color/black" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/w1"
+                    <TextView
+                        android:id="@+id/z2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/z3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/a1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:gravity="center"
+                        android:text="@string/_1"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/a2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/a3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/b1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_2"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/b2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/b3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/c1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_3"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/c2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/c3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/d1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_4"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/d2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/d3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/e1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_5"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/e2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/e3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/f1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_6"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/f2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/f3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/g1"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:text="@string/_7"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/g2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/g3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/h1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_8"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/h2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/h3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/i1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_9"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/i2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/i3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/j1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="1dp"
+                        android:gravity="center"
+                        android:text="@string/_10"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/j2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/j3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/k1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_11"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/k2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/k3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+
+                <TableRow
+                    android:divider="@drawable/divider_vertical"
+                    android:showDividers="middle">
+
+                    <TextView
+                        android:id="@+id/l1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="1dp"
+                        android:text="@string/_12"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/l2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:padding="1dp"
+                        android:text="@string/description"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/l3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:padding="1dp"
+                        android:text="@string/sample_at_km"
+                        android:textColor="@color/black" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <View
                 android:layout_width="match_parent"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
+                android:layout_height="20dp"
+                app:layout_constraintTop_toBottomOf="@id/table"/>
 
-        </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/w2Item"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/w2_wt_after_pouring"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/w1Item">
+    </ScrollView>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/w2"
-                android:layout_width="match_parent"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
+    <com.example.roadtestings1.MovableFloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:contentDescription="@string/add"
+        android:src="@drawable/ic_baseline_arrow_downward_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/w3Item"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/w3"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/w2Item">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/w3"
-                android:layout_width="match_parent"
-                android:focusable="false"
-                android:clickable="false"
-                android:cursorVisible="false"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/w4Item"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/w4_wt_in_cone"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/w3Item">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/w4"
-                android:layout_width="match_parent"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/w5Item"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/w5_wt_of_sand"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/w4Item">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/w5"
-                android:layout_width="match_parent"
-                android:focusable="false"
-                android:clickable="false"
-                android:cursorVisible="false"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/densityItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/d_density"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/w5Item">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/density_input"
-                android:layout_width="match_parent"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/volumeItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/v_vol_of_pit"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/densityItem">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/volume"
-                android:layout_width="match_parent"
-                android:focusable="false"
-                android:clickable="false"
-                android:cursorVisible="false"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/bulkItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/d_bulk_density"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/wItem">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/bulk"
-                android:layout_width="match_parent"
-                android:focusable="false"
-                android:clickable="false"
-                android:cursorVisible="false"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fieldDryItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/field_dry_density"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/bulkItem">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/fieldDry"
-                android:layout_width="match_parent"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/labDensityItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/lab_density_as_per_job_mix"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/fieldDryItem">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/labDensity"
-                android:layout_width="match_parent"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/relativeItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/relative_compaction"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/labDensityItem">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/relative"
-                android:layout_width="match_parent"
-                android:focusable="false"
-                android:clickable="false"
-                android:cursorVisible="false"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/wItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:hint="@string/w_wt_of_sample"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/volumeItem">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/w"
-                android:layout_width="match_parent"
-                android:inputType="number"
-                android:layout_height="wrap_content" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
