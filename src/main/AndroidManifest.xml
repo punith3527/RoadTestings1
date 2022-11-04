@@ -39,7 +39,8 @@
       android:screenOrientation="landscape"/>
     <activity android:name=".Gradation.InsideGradationActivity"/>
     <activity android:name=".Density.DensityInputActivity"/>
-    <activity android:name=".Density.DensityOutputActivity"/>
+    <activity android:name=".Density.DensityOutputActivity"
+        android:screenOrientation="landscape"/>
   </application>
 
 </manifest>

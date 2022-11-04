@@ -70,4 +70,15 @@
   <string name="_10">10</string>
   <string name="_11">11</string>
   <string name="_12">12</string>
+    <string name="wt_of_sand_cylinder_before_pouring_g">Wt. of sand + cylinder before pouring (g)</string>
+  <string name="wt_of_sand_cylinder_after_pouring_g">Wt. of sand + cylinder after pouring (g)</string>
+    <string name="wt_of_sand_filling_into_pit_including_cone_portion_g">wt.of sand filling into pit including cone portion (g)</string>
+  <string name="wt_of_sand_in_cone_portion_g">Wt. of sand in cone portion (g)</string>
+  <string name="wt_of_sand_in_the_pit_g">Wt. of sand in the pit (g)</string>
+  <string name="density_of_the_sand_g_cc">Density of the sand (g/cc)</string>
+  <string name="vol_of_the_pit">Vol. of the pit</string>
+  <string name="wt_of_the_sdbc_sample">Wt. of the SDBC Sample (g)</string>
+  <string name="density_of_the_sdbc_sample_g_cc">Density of the SDBC Sample (g/cc)</string>
+  <string name="field_dry_density_g_cc">Field Dry Density (g/cc)</string>
+  <string name="lab_density_as_per_job_mix_g_cc">Lab density as per Job Mix (g/cc)</string>
 </resources>

@@ -57,6 +57,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:padding="1dp"
+                        android:gravity="center"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
 
@@ -88,7 +89,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/wt_of_sand_cylinder_before_pouring_g"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -97,6 +98,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:padding="1dp"
+                        android:gravity="center"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
 
@@ -128,7 +130,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/wt_of_sand_cylinder_after_pouring_g"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -137,6 +139,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:padding="1dp"
+                        android:gravity="center"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
 
@@ -168,7 +171,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/wt_of_sand_filling_into_pit_including_cone_portion_g"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -176,6 +179,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
+                        android:gravity="center"
                         android:padding="1dp"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
@@ -208,7 +212,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/wt_of_sand_in_cone_portion_g"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -216,6 +220,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
+                        android:gravity="center"
                         android:padding="1dp"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
@@ -248,7 +253,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/wt_of_sand_in_the_pit_g"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -257,6 +262,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:padding="1dp"
+                        android:gravity="center"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
 
@@ -288,7 +294,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/density_of_the_sand_g_cc"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -297,6 +303,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:padding="1dp"
+                        android:gravity="center"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
 
@@ -328,7 +335,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/vol_of_the_pit"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -337,6 +344,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:padding="1dp"
+                        android:gravity="center"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
 
@@ -368,7 +376,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/wt_of_the_sdbc_sample"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -376,6 +384,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
+                        android:gravity="center"
                         android:padding="1dp"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
@@ -408,7 +417,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/density_of_the_sdbc_sample_g_cc"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -416,6 +425,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
+                        android:gravity="center"
                         android:padding="1dp"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
@@ -448,7 +458,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/field_dry_density_g_cc"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -456,6 +466,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
+                        android:gravity="center"
                         android:padding="1dp"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
@@ -488,7 +499,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/lab_density_as_per_job_mix_g_cc"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -497,6 +508,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:padding="1dp"
+                        android:gravity="center"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
 
@@ -528,7 +540,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
                         android:padding="1dp"
-                        android:text="@string/description"
+                        android:text="@string/relative_compaction"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -537,6 +549,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:padding="1dp"
+                        android:gravity="center"
                         android:text="@string/sample_at_km"
                         android:textColor="@color/black" />
 
