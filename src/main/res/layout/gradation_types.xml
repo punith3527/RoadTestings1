@@ -8,7 +8,7 @@
   tools:context=".MainActivity">
 
   <androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/gradation"
+    android:id="@+id/gsb"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginEnd="20dp"
@@ -17,14 +17,14 @@
     android:background="@drawable/rounded_corners"
     android:paddingBottom="20dp"
     android:paddingTop="20dp"
-    android:text="@string/gradation"
+    android:text="@string/gsb"
     android:textSize="20sp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
   <androidx.appcompat.widget.AppCompatButton
-    android:id="@+id/grb"
+    android:id="@+id/wmm"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginEnd="20dp"
@@ -33,10 +33,10 @@
     android:background="@drawable/rounded_corners"
     android:paddingBottom="20dp"
     android:paddingTop="20dp"
-    android:text="@string/grb"
+    android:text="@string/wmm"
     android:textSize="20sp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/gradation" />
+    app:layout_constraintTop_toBottomOf="@id/gsb" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
