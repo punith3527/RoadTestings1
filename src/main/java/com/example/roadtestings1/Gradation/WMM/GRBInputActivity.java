@@ -7,13 +7,15 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+
 import com.example.roadtestings1.MainActivity;
-import com.example.roadtestings1.R;;
+import com.example.roadtestings1.R;
 
 import java.util.Objects;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.AppCompatButton;
+;
 
 public class GRBInputActivity extends AppCompatActivity {
 
