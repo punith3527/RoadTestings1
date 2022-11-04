@@ -28,7 +28,7 @@ public class Gradation1InputActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.gradation_input);
 
-    Objects.requireNonNull(getSupportActionBar()).setTitle("Gradation-1");
+    Objects.requireNonNull(getSupportActionBar()).setTitle("Grade - 1");
 
     getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -81,5 +81,12 @@ public class Gradation1InputActivity extends AppCompatActivity {
     Intent myIntent = new Intent(getApplicationContext(), GradationTypesActivity.class);
     startActivity(myIntent);
     return true;
+  }
+
+  @Override
+  public void onBackPressed() {
+    super.onBackPressed();
+    Intent myIntent = new Intent(getApplicationContext(), GradationTypesActivity.class);
+    startActivity(myIntent);
   }
 }

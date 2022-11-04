@@ -241,4 +241,11 @@ public class DensityInputActivity extends AppCompatActivity {
         startActivity(myIntent);
         return true;
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(myIntent);
+    }
 }
