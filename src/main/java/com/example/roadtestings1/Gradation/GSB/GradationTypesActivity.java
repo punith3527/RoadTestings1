@@ -55,4 +55,11 @@ public class GradationTypesActivity extends AppCompatActivity {
     startActivity(myIntent);
     return true;
   }
+
+  @Override
+  public void onBackPressed() {
+    super.onBackPressed();
+    Intent myIntent = new Intent(getApplicationContext(), InsideGradationActivity.class);
+    startActivity(myIntent);
+  }
 }
