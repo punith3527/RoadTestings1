@@ -27,7 +27,6 @@
     <activity android:name=".Gradation.GSB.Gradation_5.Gradation5InputActivity"/>
     <activity android:name=".Gradation.GSB.Gradation_5.Gradation5OutputActivity"
       android:screenOrientation="landscape" />
-    <activity android:name=".Gradation.GSB.GradationTypesActivity"/>
     <activity android:name=".Gradation.WMM.GRBInputActivity"/>
     <activity android:name=".Gradation.WMM.GRBOutputActivity"
       android:screenOrientation="landscape"/>
@@ -37,7 +36,6 @@
     <activity android:name=".Gradation.GSB.Gradation_3.Gradation3InputActivity"/>
     <activity android:name=".Gradation.GSB.Gradation_3.Gradation3OutputActivity"
       android:screenOrientation="landscape"/>
-    <activity android:name=".Gradation.InsideGradationActivity"/>
     <activity android:name=".Density.DensityInputActivity"/>
     <activity android:name=".Density.DensityOutputActivity"
         android:screenOrientation="landscape"/>

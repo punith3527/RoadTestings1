@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.roadtestings1.Gradation.GSB.GradationTypesActivity;
+import com.example.roadtestings1.MainActivity;
 import com.example.roadtestings1.R;
 
 import java.util.Objects;
@@ -74,7 +74,7 @@ public class Gradation5InputActivity extends AppCompatActivity {
   }
 
   public boolean onOptionsItemSelected(MenuItem item) {
-    Intent myIntent = new Intent(getApplicationContext(), GradationTypesActivity.class);
+    Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
     startActivity(myIntent);
     return true;
   }
@@ -82,7 +82,7 @@ public class Gradation5InputActivity extends AppCompatActivity {
   @Override
   public void onBackPressed() {
     super.onBackPressed();
-    Intent myIntent = new Intent(getApplicationContext(), GradationTypesActivity.class);
+    Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
     startActivity(myIntent);
   }
 }
