@@ -38,4 +38,21 @@
     <string name="density">Density</string>
   <string name="gsb">GSB</string>
   <string name="wmm">WMM</string>
+    <string name="location">Location</string>
+    <string name="w1_wt_before_pouring">W1 -> Wt. before pouring</string>
+  <string name="w2_wt_after_pouring">W2 -> Wt. after pouring</string>
+  <string name="w3">W3</string>
+  <string name="w4_wt_in_cone"><![CDATA[W4 -> Wt. in cone]]></string>
+  <string name="w5_wt_of_sand"><![CDATA[W5 -> Wt. of sand]]></string>
+  <string name="d_density"><![CDATA[d -> density]]></string>
+  <string name="v_vol_of_pit"><![CDATA[V -> Vol. of pit]]></string>
+  <string name="w_wt_of_sample"><![CDATA[W -> Wt. of SDBC sample]]></string>
+  <string name="d_bulk_density"><![CDATA[D -> Density of SDBC]]></string>
+  <string name="initial_wt_of_sample">Initial Wt. of Sample</string>
+  <string name="final_wt_of_the_sample">Final Wt. of the sample</string>
+  <string name="f_m_c">F.M.C</string>
+  <string name="field_dry_density">Field dry density</string>
+  <string name="lab_density_as_per_job_mix">Lab Density as per Job Mix</string>
+  <string name="relative_compaction">Relative Compaction</string>
+  <string name="to_table">To Table</string>
 </resources>

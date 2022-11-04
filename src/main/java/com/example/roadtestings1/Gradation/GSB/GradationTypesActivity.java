@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import com.example.roadtestings1.Gradation.GSB.Gradation_1.Gradation1InputActivity;
 import com.example.roadtestings1.Gradation.GSB.Gradation_3.Gradation3InputActivity;
 import com.example.roadtestings1.Gradation.GSB.Gradation_5.Gradation5InputActivity;
+import com.example.roadtestings1.Gradation.InsideGradationActivity;
 import com.example.roadtestings1.MainActivity;
 import com.example.roadtestings1.R;
 
@@ -50,7 +51,7 @@ public class GradationTypesActivity extends AppCompatActivity {
   }
 
   public boolean onOptionsItemSelected(MenuItem item){
-    Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
+    Intent myIntent = new Intent(getApplicationContext(), InsideGradationActivity.class);
     startActivity(myIntent);
     return true;
   }

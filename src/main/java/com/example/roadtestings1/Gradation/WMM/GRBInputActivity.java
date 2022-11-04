@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.roadtestings1.Gradation.InsideGradationActivity;
 import com.example.roadtestings1.MainActivity;
 import com.example.roadtestings1.R;;
 
@@ -25,7 +26,7 @@ public class GRBInputActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grb_input);
 
-        Objects.requireNonNull(getSupportActionBar()).setTitle("GRB");
+        Objects.requireNonNull(getSupportActionBar()).setTitle("WMM");
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -75,7 +76,7 @@ public class GRBInputActivity extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent myIntent = new Intent(getApplicationContext(), MainActivity.class);
+        Intent myIntent = new Intent(getApplicationContext(), InsideGradationActivity.class);
         startActivity(myIntent);
         return true;
     }
