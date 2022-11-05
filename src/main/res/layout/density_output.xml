@@ -443,54 +443,13 @@
                     android:showDividers="middle">
 
                     <TextView
-                        android:id="@+id/j1"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="1dp"
-                        android:gravity="center"
-                        android:text="@string/_10"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/j2"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="5"
-                        android:padding="1dp"
-                        android:text="@string/field_dry_density_g_cc"
-                        android:textColor="@color/black" />
-
-                    <TextView
-                        android:id="@+id/j3"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:padding="1dp"
-                        android:text="@string/sample_at_km"
-                        android:textColor="@color/black" />
-
-                </TableRow>
-
-                <View
-                    android:id="@+id/view11"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/black"/>
-
-                <TableRow
-                    android:divider="@drawable/divider_vertical"
-                    android:showDividers="middle">
-
-                    <TextView
                         android:id="@+id/k1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="1dp"
-                        android:text="@string/_11"
+                        android:text="@string/_10"
                         android:textColor="@color/black" />
 
                     <TextView
@@ -531,7 +490,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:padding="1dp"
-                        android:text="@string/_12"
+                        android:text="@string/_11"
                         android:textColor="@color/black" />
 
                     <TextView

@@ -46,8 +46,8 @@
   <string name="w5_wt_of_sand"><![CDATA[W5 -> Wt. of sand]]></string>
   <string name="d_density"><![CDATA[d -> density]]></string>
   <string name="v_vol_of_pit"><![CDATA[V -> Vol. of pit]]></string>
-  <string name="w_wt_of_sample"><![CDATA[W -> Wt. of SDBC sample]]></string>
-  <string name="d_bulk_density"><![CDATA[D -> Density of SDBC]]></string>
+  <string name="w_wt_of_sample"><![CDATA[W -> Wt. of sample]]></string>
+  <string name="d_bulk_density"><![CDATA[D -> Density of sample]]></string>
   <string name="initial_wt_of_sample">Initial Wt. of Sample</string>
   <string name="final_wt_of_the_sample">Final Wt. of the sample</string>
   <string name="f_m_c">F.M.C</string>
