@@ -24,7 +24,7 @@ import java.io.FileOutputStream;
 
 public class DensityOutputActivity extends AppCompatActivity {
 
-    TextView a3, b3, c3, d3, e3, f3, g3, h3, i3, j3, k3, l3, z3;
+    TextView a3, b3, c3, d3, e3, f3, g3, h3, i3, k3, l3, z3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,7 +49,6 @@ public class DensityOutputActivity extends AppCompatActivity {
         g3 = findViewById(R.id.g3);
         h3 = findViewById(R.id.h3);
         i3 = findViewById(R.id.i3);
-        j3 = findViewById(R.id.j3);
         k3 = findViewById(R.id.k3);
         l3 = findViewById(R.id.l3);
 
@@ -65,9 +64,8 @@ public class DensityOutputActivity extends AppCompatActivity {
         g3.setText(intent.getStringExtra("h2"));
         h3.setText(intent.getStringExtra("i2"));
         i3.setText(intent.getStringExtra("j2"));
-        j3.setText(intent.getStringExtra("k2"));
-        k3.setText(intent.getStringExtra("l2"));
-        l3.setText(intent.getStringExtra("m2"));
+        k3.setText(intent.getStringExtra("k2"));
+        l3.setText(intent.getStringExtra("l2"));
 
         MovableFloatingActionButton movableFloatingActionButton = findViewById(R.id.fab);
         movableFloatingActionButton.setOnClickListener(v -> buttonScreenshot());
@@ -96,4 +94,3 @@ public class DensityOutputActivity extends AppCompatActivity {
         }
     }
 }
-

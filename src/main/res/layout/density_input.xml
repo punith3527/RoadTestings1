@@ -216,26 +216,6 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fieldDryItem"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="20dp"
-            android:hint="@string/field_dry_density"
-            android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/bulkItem">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/fieldDry"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="numberDecimal" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/labDensityItem"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
@@ -245,7 +225,7 @@
             android:layout_marginEnd="20dp"
             android:hint="@string/lab_density_as_per_job_mix"
             android:inputType="text"
-            app:layout_constraintTop_toBottomOf="@id/fieldDryItem">
+            app:layout_constraintTop_toBottomOf="@id/bulkItem">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/labDensity"
