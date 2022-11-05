@@ -1,986 +1,989 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white">
 
   <ScrollView
-    android:id="@+id/scrollView"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toTopOf="parent"
-    android:orientation="vertical"
-    android:paddingLeft="5dp"
-    android:paddingRight="5dp">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-
-    <TableLayout
-      android:id="@+id/table"
-      app:layout_constraintTop_toTopOf="parent"
+      android:id="@+id/scrollView"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-      android:showDividers="middle"
-      android:background="@drawable/table_bg"
-      android:stretchColumns="*">
+      android:orientation="vertical"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      app:layout_constraintTop_toTopOf="parent">
 
-      <TableRow
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-        <TextView
-          android:id="@+id/z1"
-          android:layout_width="0dp"
+      <TableLayout
+          android:id="@+id/table"
+          android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/sieve_size_in_mm"
-          android:textColor="@color/black" />
+          android:layout_marginTop="10dp"
+          android:background="@drawable/table_bg"
+          android:showDividers="middle"
+          android:stretchColumns="*"
+          app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-          android:id="@+id/z2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/remarks"
-          android:textColor="@color/black" />
-      </TableRow>
+        <TableRow
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/z1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/sieve_size_in_mm"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/z2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/remarks"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/sieve_size_in_mm"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/wt_of_the_sample_retained_in_the_sieve_in_gms"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/cumulative_wt_of_the_sample_retained_in_the_sieve"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/percentage_of_the_sample_retained_in_the_sieve"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/percentage_of_passing_through_the_sieve"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/limits_as_per_standards_in"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/percentage_of_oversize_undersize"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/remarks"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row1"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/a1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/a2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/a3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/a4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/a5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/a6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/a7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/a8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row2"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/b1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/b2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/b3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/b4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/b5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/b6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/b7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/b8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row3"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/c1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/c2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/c3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/c4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/c5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/c6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/c7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/c8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row4"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/d1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/d2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/d3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/d4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/d5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/d6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/d7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/d8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row5"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/e1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/e2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/e3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/e4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/e5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/e6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/e7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/e8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row6"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/f1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/f2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/f3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/f4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/f5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/f6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/f7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/f8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row7"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/g1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/g2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/g3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/g4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/g5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/g6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/g7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/g8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row8"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/h1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/h2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/h3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/h4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/h5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/h6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/h7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/h8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TableRow
+            android:id="@+id/row9"
+            android:divider="@drawable/divider_vertical"
+            android:showDividers="middle">
+
+          <TextView
+              android:id="@+id/i1"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_75_00"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/i2"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/i3"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/i4"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/i5"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/i6"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/i7"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/i8"
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:padding="1dp"
+              android:text="@string/_10000"
+              android:textAlignment="center"
+              android:textColor="@color/black" />
+        </TableRow>
+
+      </TableLayout>
 
       <View
-        android:id="@+id/view1"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/sieve_size_in_mm"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/wt_of_the_sample_retained_in_the_sieve_in_gms"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/cumulative_wt_of_the_sample_retained_in_the_sieve"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/percentage_of_the_sample_retained_in_the_sieve"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/percentage_of_passing_through_the_sieve"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/limits_as_per_standards_in"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/percentage_of_oversize_undersize"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/remarks"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view2"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row1"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/a1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/a2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/a3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/a4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/a5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/a6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/a7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/a8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view3"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row2"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/b1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/b2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/b3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/b4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/b5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/b6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/b7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/b8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view4"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row3"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/c1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/c2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/c3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/c4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/c5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/c6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/c7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/c8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view5"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row4"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/d1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/d2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/d3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/d4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/d5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/d6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/d7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/d8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view6"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row5"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/e1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/e2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/e3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/e4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/e5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/e6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/e7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/e8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view7"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row6"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/f1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/f2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/f3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/f4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/f5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/f6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/f7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/f8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view8"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row7"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/g1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/g2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/g3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/g4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/g5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/g6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/g7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/g8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view9"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row8"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/h1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/h2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/h3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/h4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/h5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/h6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/h7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/h8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-      <View
-        android:id="@+id/view10"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/black"/>
-
-      <TableRow
-        android:id="@+id/row9"
-        android:divider="@drawable/divider_vertical"
-        android:showDividers="middle">
-
-        <TextView
-          android:id="@+id/i1"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_75_00"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/i2"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/i3"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/i4"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/i5"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/i6"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/i7"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-
-        <TextView
-          android:id="@+id/i8"
-          android:layout_width="0dp"
-          android:layout_height="wrap_content"
-          android:layout_weight="1"
-          android:padding="1dp"
-          android:text="@string/_10000"
-          android:textAlignment="center"
-          android:textColor="@color/black" />
-      </TableRow>
-
-    </TableLayout>
-
-      <View
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        app:layout_constraintTop_toBottomOf="@id/table"/>
+          android:layout_width="match_parent"
+          android:layout_height="20dp"
+          app:layout_constraintTop_toBottomOf="@id/table" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
   </ScrollView>
 
   <com.example.roadtestings1.MovableFloatingActionButton
-    android:id="@+id/fab"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="40dp"
-    android:contentDescription="@string/add"
-    android:src="@drawable/ic_baseline_arrow_downward_24"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent" />
+      android:id="@+id/fab"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="40dp"
+      android:contentDescription="@string/add"
+      android:src="@drawable/ic_baseline_arrow_downward_24"
+      app:backgroundTint="@color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
